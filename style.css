@@ -73,10 +73,17 @@
         
         /* --- LOGIN CARD --- */
         .login-card {
-            background-color: #161b22; padding: 40px; width: 350px;
-            border-radius: 25px; border: 2px solid #2ea043;
+           background-color: #161b22;
+             padding: 40px; 
+             width: 90%;
+             max-width: 400px;
+             margin: auto;
+            border-radius: 25px; 
+            border: 2px solid #2ea043;
             box-shadow: 0 0 20px rgba(46, 160, 67, 0.2);
-            text-align: center; transition: 0.4s; z-index: 3;
+            text-align: center; 
+            transition: 0.4s;
+             z-index: 3;
         }
 
         input {
@@ -154,3 +161,19 @@
             margin-top: 20px;
             font-weight: bold;
         }
+
+@media screen and (max-width: 600px ) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    .lamp-section, .login-card {
+        padding: 10px;
+        width: 100%;
+    }
+    .face {
+        gap: 10px;
+    }
+    .broom-container {
+        margin-left: 0 !important;
+    }
+}

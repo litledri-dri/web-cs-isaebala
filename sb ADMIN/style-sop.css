@@ -1,0 +1,151 @@
+/* navbar start */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    background-color:rgb(246, 219, 145);
+    height:60px;
+    align-items: center;
+    justify-content:center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.logo {
+    position:absolute;
+    left:20px;
+    font-weight:bold;
+    font-style:italic;
+    font-size:30px;
+}
+
+.navbar .logo span-a {
+    color:red;
+}
+
+.navbar .logo span-b {
+    color:rgb(175, 175, 15);
+}
+
+.navbar .logo span-c {
+    color:green;
+}
+
+.nav-links {
+    list-style:none;
+    display:flex;
+    gap:30px;
+    margin:0;
+    padding:0;
+}
+
+.nav-links li a {
+    text-decoration:none;
+    color:#000;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.navbar .nav-links a:hover {
+    color:red;
+}
+
+.navbar .nav-links a::after {
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1 solid red;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+ 
+.navbar .nav-links a:hover::after {
+    transform: scaleX(0.5);
+}
+
+/* navbar end */
+
+/* 1. navbar tetap di paling atas dan tidak tertutup */
+.navbar {
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+}
+
+/* 2.bagian gambar/H3 agar tidak tertutup navbar */
+.header-section {
+    padding-top:61px;
+    text-align:center;
+    position:relative;
+    z-index:10;
+}
+
+.main-img {
+    width:500%;
+    max-width:400px;
+    height:auto;
+    border-radius:8px;
+
+}
+
+.header-section h3 {
+    font-size:30px;
+    font-style:bold;
+}
+
+/* 3.item-item berada di bawah gambar */
+.item-housekeeping {
+    margin-top:20px;
+    position:relative;
+    z-index:1;
+}
+
+/*judul utaman*/
+h1 {
+    text-align:center;
+    color:black;
+
+}
+
+/* grid untuk membagi dua kolom */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    padding:20px;
+}
+
+/* kotak untuk masing-masing item */
+.item-housekeeping {
+    border: 2px solid #ebc853;
+    border-radius: 12px;
+    padding:20px;
+    background-color:rgba(255, 255, 255 0.8);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.item-housekeeping h3 {
+    margin:0 0 5px 0;
+    color: #2980b9;
+    font-size: 16px;
+}
+
+.item-housekeeping p {
+    margin:0;
+    font-size:13px;
+    text-align:center;
+}
+
+.item-housekeeping a{
+    text-align:center;
+    color:black;
+    
+}

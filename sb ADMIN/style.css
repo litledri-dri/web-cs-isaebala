@@ -1,0 +1,157 @@
+/* navbar start */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+header {
+    background-color: #2097cf;
+    color:white;
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    background-color:#2097cf;
+    height:60px;
+    align-items: center;
+    justify-content:center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.logo {
+    position:absolute;
+    left:20px;
+    font-weight:bold;
+    font-style:italic;
+    font-size:30px;
+}
+
+.navbar .logo span-a {
+    color:red;
+}
+
+.navbar .logo span-b {
+    color:rgb(175, 175, 15);
+}
+
+.navbar .logo span-c {
+    color:green;
+}
+
+.nav-links {
+    list-style:none;
+    display:flex;
+    gap:30px;
+    margin:0;
+    padding:0;
+    
+
+}
+
+.nav-links li a {
+    text-decoration:none;
+    color:#000;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.navbar .nav-links a:hover {
+    color:red;
+}
+
+.navbar .nav-links a::after {
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1 solid red;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+ 
+.navbar .nav-links a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.nav-out a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    right: 25px;
+
+}
+
+/* navbar end */
+
+/* hero start */
+
+.hero-section {
+    position: relative;
+    width:100%;
+    min-height: 100vh;
+    background-color:white;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+}
+
+.hero-text {
+    text-align: center;
+    color: black;
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+    
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ddd;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

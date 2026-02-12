@@ -1,0 +1,186 @@
+/* navbar start */
+
+
+.navbar {
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    background-color: #f3d59f;
+    padding: 10px 20px;
+    position: relative;
+    top:0;
+    width: 100%;
+    height: 70px;
+
+}
+.nav-menu {
+    display: flex;
+    list-style:none ;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+/* navbar end */
+
+/* RESPONSIV UNTUK TABLET & HP */
+@media screen and (max-width: 960px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #f3d59f;
+        text-align: center;
+        border-top: 1px solid rgba(0,0,0,0.1);
+    }
+}
+
+/* munculkan menu saat class'active' ditambah lewat JS */
+.nav-menu.active {
+    display: flex;
+}
+
+/* style tombol burger */
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #333;
+    display: block;
+}
+
+/* ukuran teks lebih kecil di HP agar tidak meluber */
+.brand { font-size: 1.1rem; }
+.nav-links {font-size: 0.9rem;
+padding: 20px; width: 100%; display: block;}
+
+/* jarak aman container agar tidak tertutup navbar */
+.content-wrapper {
+    margin-top: 90px;
+    padding: 10px;
+}
+
+/*pengaturan dasar halaman start*/
+body {
+font-family: Arial, Helvetica, sans-serif;
+color: #333;
+line-height: 1.5;
+}
+/*pengaturan dasar halaman end*/
+
+/* tabel utama start */
+.sop-table {
+    width: 700px;
+    height: 600px;
+    max-width: 700px;
+    padding: 10px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 2px solid #000;
+}
+
+/* tabel utama end */
+
+/* pengaturan sel (padding & border) start */
+.sop-table th .sop-table td {
+    border: 1px solid #000;
+    padding: 10px 15px;
+    vertical-align: top;
+}
+
+/* pengaturan sel (padding & border) end */
+
+/* judul bagian (abu-abu) start */
+.section-title {
+    background-color: #e0e0e0;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* judul bagian (abu-abu) end */
+
+/* header utama */
+.header-main {
+    text-align: center;
+    font-size: 18px;
+
+}
+
+/* bagian logo */
+.logo-section {
+    width: 200px;
+    text-align: center;
+}
+
+.logo-box {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.logo-box .d {
+    color: red;
+}
+.logo-box .e {
+    color: green;
+}
+.logo-box .s {
+    color: orange;
+}
+
+.company-name {
+    font-size: 10px;
+    font-weight: bold;
+    border-top: 1px solid #000;
+    padding-top: 3px;
+}
+
+/* list styling */
+
+ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.sub-list {
+    list-style-type: "- ";
+    margin-top: 5px;
+}
+
+.sub-list li {
+    margin-bottom: 3px;
+}
+
+/* pengaturan gambar dalam table */
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    gap:10px;
+}
+
+.img-sop {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

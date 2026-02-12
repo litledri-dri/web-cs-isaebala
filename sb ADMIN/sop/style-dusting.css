@@ -1,0 +1,185 @@
+/* navbar start */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    background-color:rgb(246, 219, 145);
+    height:60px;
+    align-items: center;
+    justify-content:center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.logo {
+    position:absolute;
+    left:20px;
+    font-weight:bold;
+    font-style:italic;
+    font-size:30px;
+}
+
+.navbar .logo span-a {
+    color:red;
+}
+
+.navbar .logo span-b {
+    color:rgb(175, 175, 15);
+}
+
+.navbar .logo span-c {
+    color:green;
+}
+
+.nav-links {
+    list-style:none;
+    display:flex;
+    gap:30px;
+    margin:0;
+    padding:0;
+}
+
+.nav-links li a {
+    text-decoration:none;
+    color:#000;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.navbar .nav-links a:hover {
+    color:red;
+}
+
+.navbar .nav-links a::after {
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1 solid red;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+ 
+.navbar .nav-links a:hover::after {
+    transform: scaleX(0.5);
+}
+
+/* navbar end */
+
+
+
+/*pengaturan dasar halaman start*/
+body {
+font-family: Arial, Helvetica, sans-serif;
+color: #333;
+line-height: 1.5;
+}
+/*pengaturan dasar halaman end*/
+
+/* tabel utama start */
+.sop-table {
+    width: 700px;
+    height: 600px;
+    max-width: 700px;
+    padding: 10px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 2px solid #000;
+}
+
+/* tabel utama end */
+
+/* pengaturan sel (padding & border) start */
+.sop-table th .sop-table td {
+    border: 1px solid #000;
+    padding: 10px 15px;
+    vertical-align: top;
+}
+
+/* pengaturan sel (padding & border) end */
+
+/* judul bagian (abu-abu) start */
+.section-title {
+    background-color: #e0e0e0;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* judul bagian (abu-abu) end */
+
+/* header utama */
+.header-main {
+    text-align: center;
+    font-size: 18px;
+
+}
+
+/* bagian logo */
+.logo-section {
+    width: 200px;
+    text-align: center;
+}
+
+.logo-box {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.logo-box .d {
+    color: red;
+}
+.logo-box .e {
+    color: green;
+}
+.logo-box .s {
+    color: orange;
+}
+
+.company-name {
+    font-size: 10px;
+    font-weight: bold;
+    border-top: 1px solid #000;
+    padding-top: 3px;
+}
+
+/* list styling */
+
+ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.sub-list {
+    list-style-type: "- ";
+    margin-top: 5px;
+}
+
+.sub-list li {
+    margin-bottom: 3px;
+}
+
+/* pengaturan gambar dalam table */
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    gap:10px;
+}
+
+.img-sop {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

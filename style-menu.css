@@ -160,3 +160,72 @@
     border-radius: 30px;
 
 }
+
+/* --- Grid Menu (Kunci Utama Laptop) --- */
+.service-grid {
+    display: grid;
+    /* Laptop: 4 kolom yang lebarnya fleksibel */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 25px;
+    width: 90%; /* Mengambil 90% lebar layar laptop */
+    max-width: 1200px; /* Batas maksimal agar tidak terlalu melar di monitor ultra-wide */
+    margin: 0 auto;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 25px 15px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background-color: white;
+}
+
+.main-img, .main-img1 {
+    width: 80px; /* Ikon lebih besar di laptop */
+    height: auto;
+    margin: 0 auto 15px;
+    display: block;
+}
+
+/* --- RESPONSIVE BREAKPOINTS --- */
+
+/* Tablet (Layar Sedang) */
+@media screen and (max-width: 1024px) {
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 Kolom */
+    }
+    .navbar {
+        padding: 0 3%;
+    }
+}
+
+/* Smartphone (Layar Kecil) */
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+        min-height: auto;
+    }
+
+    .nav-links {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr; /* 1 Kolom saja di HP */
+        width: 95%;
+    }
+
+    .hero-text {
+        font-size: 20px;
+    }
+}

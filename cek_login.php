@@ -11,8 +11,9 @@ $cek = mysqli_num_rows($login);
 if($cek > 0){
     $_SESSION['username'] = $username;
     $_SESSION['status'] = "login";
-    header("location:sb_admin/admin.html"); 
+    header("location:admin.html"); 
 }else{
     header("location:login.php?pesan=gagal");
 }
+
 ?>
